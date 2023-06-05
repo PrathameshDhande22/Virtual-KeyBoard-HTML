@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Crimson+Text:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.boardinfo {
+    font-family: 'Coming Soon', cursive;
+    padding: 10px;
+}
+
+.info {
+    font-size: 25px;
+}
+
+.textboard {
+    margin: 30px 20%;
+}
+
+.writingboard {
+    font-size: 30px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    height: 2em;
+    overflow: scroll;
+    display: block;
+    width: 100%;
+}
+
+.containers {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.text {
+    color: #7d8082;
+    padding: 10px 0px 0px 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.board {
+    background-color: rgb(220, 213, 213);
+    padding: 7px;
+    margin: 30px 25%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 680px;
+}
+
+.btnr {
+    padding: 0.4em 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.rows {
+    display: flex;
+    gap: 5px;
+}
+
+.sftbtn {
+    padding: 0.4em 26px;
+}
+
+.etrbtn {
+    padding: 0.4em 20px;
+}
+
+.spcbtn {
+    padding: 0.4em 206px;
+}
+
+@media screen and (max-width:1300px) and (min-width:1000px) {
+    .board {
+        margin: 30px 20%;
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width:900px) {
+    .board {
+        margin: 30px 15%;
+    }
+}
+
+@media screen and (max-width:900px) and (min-width:666px) {
+    .board {
+        margin: 30px 5%;
+    }
+}
+
+@media screen and (max-width:666px) {
+    .board {
+        margin: 30px 0%;
+    }
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+    font-size: 18px;
+    align-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#cursor {
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px 0px 0px 0px;
+}
+
+.btnr::selection {
+    user-select: none;
+}
+
+.btnr:hover {
+    background-color: rgb(233, 228, 228);
+}
+
+.btnr:active{
+    background-color: rgb(177, 176, 176);
+}

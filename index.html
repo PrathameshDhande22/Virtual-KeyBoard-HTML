@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Keyboard</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="containers">
+        <h2 class="title">Virtual Keyboard</h2>
+        <div class="textboard">
+            <div class="boardinfo">
+                Text will be written Here
+            </div>
+            <div class="wrap">
+                <div class="writingboard">
+                    <span class="text"></span><span id="cursor">|</span>
+                </div>
+                <button type="button" class="fa fa-clipboard btnr clip" style="font-size: 33px;" id="liveToastBtn"
+                    data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"></button>
+
+                <div class="toast-container position-fixed top-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="dialog" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <strong class="ms-3 me-auto">Virtual Keyboard</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            Copied The Text Successfully
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="board">
+            <div class="rows">
+                <div class="btnr cng">`</div>
+                <div class="btnr cng">1</div>
+                <div class="btnr cng">2</div>
+                <div class="btnr cng">3</div>
+                <div class="btnr cng">4</div>
+                <div class="btnr cng">5</div>
+                <div class="btnr cng">6</div>
+                <div class="btnr cng">7</div>
+                <div class="btnr cng">8</div>
+                <div class="btnr cng">9</div>
+                <div class="btnr cng">0</div>
+                <div class="btnr cng">-</div>
+                <div class="btnr cng">=</div>
+                <div class="btnr bckbtn">&#9224;</div>
+            </div>
+            <div class="rows">
+                <div class="btnr">tab</div>
+                <div class="btnr cng">q</div>
+                <div class="btnr cng">w</div>
+                <div class="btnr cng">e</div>
+                <div class="btnr cng">r</div>
+                <div class="btnr cng">t</div>
+                <div class="btnr cng">y</div>
+                <div class="btnr cng">u</div>
+                <div class="btnr cng">i</div>
+                <div class="btnr cng">o</div>
+                <div class="btnr cng">p</div>
+                <div class="btnr cng">[</div>
+                <div class="btnr cng">]</div>
+                <div class="btnr cng">\</div>
+            </div>
+            <div class="rows">
+                <div class="btnr">caps</div>
+                <div class="btnr cng">a</div>
+                <div class="btnr cng">s</div>
+                <div class="btnr cng">d</div>
+                <div class="btnr cng">f</div>
+                <div class="btnr cng">g</div>
+                <div class="btnr cng">h</div>
+                <div class="btnr cng">j</div>
+                <div class="btnr cng">k</div>
+                <div class="btnr cng">l</div>
+                <div class="btnr cng">;</div>
+                <div class="btnr cng">'</div>
+                <div class="btnr etrbtn">enter</div>
+            </div>
+            <div class="rows">
+                <div class="btnr sftbtn noshift" id="shifter">shift</div>
+                <div class="btnr cng">z</div>
+                <div class="btnr cng">x</div>
+                <div class="btnr cng">c</div>
+                <div class="btnr cng">v</div>
+                <div class="btnr cng">b</div>
+                <div class="btnr cng">n</div>
+                <div class="btnr cng">m</div>
+                <div class="btnr cng">,</div>
+                <div class="btnr cng">.</div>
+                <div class="btnr cng">/</div>
+                <div class="btnr sftbtn">shift</div>
+            </div>
+            <div class="rows">
+                <div class="btnr">.com</div>
+                <div class="btnr">@</div>
+                <div class="btnr spcbtn"><span class='material-icons-sharp'>space_bar</span></div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <span>Made with <i class="fa fa-heart" style="color: red;"></i> by Prathamesh Dhande</span>
+            <a href="http://github.com/prathameshdhande22"><i class="fa fa-github"
+                    style="font-size: 24px;color: white;"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
