@@ -1,7 +1,7 @@
 // when the dom is loaded it will check if it's width is less than 620px then call support.html
 window.addEventListener("DOMContentLoaded", function (e) {
     if (window.innerWidth < 620) {
-        location.href = "/support.html";
+        location.href = "support.html";
     }
 });
 
